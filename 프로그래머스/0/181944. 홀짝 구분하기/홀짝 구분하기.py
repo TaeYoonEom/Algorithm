@@ -1,5 +1,6 @@
 a = int(input())
-if(a % 2 == 0):
-    print(str(a) + " is even")
+
+if a % 2 == 0:
+    print("%d is even" %a)
 else:
-    print(str(a) + " is odd")
+    print("%d is odd" %a)
