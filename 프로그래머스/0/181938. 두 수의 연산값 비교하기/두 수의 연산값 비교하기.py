@@ -1,5 +1,13 @@
 def solution(a, b):
-    concat_val = int(str(a) + str(b))
-    mult_val = 2 * a * b
+    answer = 0
+    number1 = 0
+    number2 = 0
     
-    return max(concat_val, mult_val)
+    number1 = str(a) + str(b)
+    number2 = 2*a*b
+    
+    if int(number1) > number2:
+        answer = int(number1)
+    else:
+        answer = number2
+    return answer
