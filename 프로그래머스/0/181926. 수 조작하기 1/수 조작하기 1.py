@@ -1,16 +1,15 @@
 def solution(n, control):
     answer = 0
     
-    control = list(control)
-    
-    for i in range(len(control)):
-        if(control[i] == "w"):
+    for i in control:
+        if i == 'w':
             n += 1
-        elif(control[i] == "s"):
+        elif i == 's':
             n -= 1
-        elif(control[i] == "d"):
+        elif i == 'd':
             n += 10
-        elif(control[i] == "a"):
+        elif i == 'a':
             n -= 10
+            
     answer = n
     return answer
