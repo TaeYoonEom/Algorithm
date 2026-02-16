@@ -1,11 +1,15 @@
 def solution(num_list):
-    odd_str = ''
-    even_str = ''
-    
-    for num in num_list:
-        if num % 2 == 0:      
-            even_str += str(num)
-        else:                
-            odd_str += str(num)
-    
-    return int(odd_str) + int(even_str)
+    oddL=[]
+    evenL=[]
+    for x in num_list:
+        if x%2==1:
+            oddL.append(str(x))
+        else:
+            evenL.append(str(x))
+    odd=''
+    even=''
+    for x in oddL:
+        odd+=x
+    for x in evenL:
+        even+=x
+    return int(odd)+int(even)

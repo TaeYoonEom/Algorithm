@@ -1,10 +1,10 @@
 # [level 0] 이어 붙인 수 - 181928 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181928) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181928#qna) 
 
 ### 성능 요약
 
-메모리: 9.35 MB, 시간: 0.03 ms
+메모리: 9.23 MB, 시간: 0.03 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 05월 18일 22:47:33
+2026년 02월 16일 16:12:21
 
 ### 문제 설명
 
