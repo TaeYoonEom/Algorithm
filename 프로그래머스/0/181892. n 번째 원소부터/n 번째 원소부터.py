@@ -1,4 +1,5 @@
 def solution(num_list, n):
+    answer = []
     
-    num_list = num_list[n - 1:]
-    return num_list
+    answer = num_list[n-1:]
+    return answer
