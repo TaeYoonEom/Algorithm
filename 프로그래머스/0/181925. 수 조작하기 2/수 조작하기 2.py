@@ -1,14 +1,13 @@
 def solution(numLog):
     answer = ''
-    for i in range(1, len(numLog)):
-        diff = numLog[i] - numLog[i-1]
-        if diff == 1:
+    
+    for i in range(len(numLog)-1):
+        if numLog[i+1] - numLog[i] == 1:
             answer += "w"
-        elif diff == -1:
+        elif numLog[i+1] - numLog[i] == -1:
             answer += "s"
-        elif diff == 10:
+        elif numLog[i+1] - numLog[i] == 10:
             answer += "d"
-        elif diff == -10:
+        elif numLog[i+1] - numLog[i] == -10:
             answer += "a"
-            
     return answer
