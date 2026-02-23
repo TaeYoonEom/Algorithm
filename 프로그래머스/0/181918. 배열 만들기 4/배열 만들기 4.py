@@ -5,11 +5,11 @@ def solution(arr):
     while i < len(arr):
         if not stk:
             stk.append(arr[i])
-            i = i + 1
-        elif stk[-1] < arr[i]:
+            i += 1
+        elif arr[i] > stk[-1]:
             stk.append(arr[i])
-            i = i + 1
-        elif stk[-1] >= arr[i]:
+            i += 1
+        else:
             stk.pop()
-            
+    
     return stk
