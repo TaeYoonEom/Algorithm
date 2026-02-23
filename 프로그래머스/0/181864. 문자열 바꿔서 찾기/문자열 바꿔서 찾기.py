@@ -1,17 +1,14 @@
 def solution(myString, pat):
     answer = 0
-    string = ''
-    
-    for i in myString:
-        if i == 'A':
-            string += 'B'
-        elif i == 'B':
-            string += 'A'
+    swapString = ""
+    for i in range(len(myString)):
+        if myString[i] == "A":
+            swapString += "B"
         else:
-            string += i 
+            swapString += "A"
     
-    if pat in string:
-        answer += 1
+    if pat in swapString:
+        answer = 1
     else:
-        answer += 0
+        answer = 0
     return answer
