@@ -1,2 +1,7 @@
 def solution(n_str):
-    return n_str.lstrip('0')
+    answer = ''
+    
+    answer += n_str.lstrip('0')
+            
+            
+    return answer
