@@ -1,33 +1,39 @@
 def solution(a, b, c, d):
-    from collections import Counter
-
-    nums = [a, b, c, d]
-    count = Counter(nums)
-    freq = sorted(count.items(), key=lambda x: -x[1])  # 등장 횟수로 정렬
-
-    if len(count) == 1:
-        # 조건 1: 네 개 모두 같음
-        return 1111 * freq[0][0]
+    arr = sorted([a,b,c,d])
     
-    elif len(count) == 2:
-        # 조건 2 or 3
-        if freq[0][1] == 3:
-            # 조건 2: 3개 같고 1개 다름
-            p = freq[0][0]
-            q = freq[1][0]
+    # 서로 다른 숫자 개수
+    unique = len(set(arr))
+    
+    if unique == 1:
+        return 1111 * arr[0]
+    
+    elif unique == 2:
+        if arr.count(arr[0]) == 3 or arr.count(arr[0]) == 1:
+            if arr.count(arr[0]) == 3:
+                p = arr[0]
+                q = arr[3]
+            else:
+                p = arr[3]
+                q = arr[0]
             return (10 * p + q) ** 2
         else:
-            # 조건 3: 2개 + 2개
-            p = freq[0][0]
-            q = freq[1][0]
-            return (p + q) * abs(p - q)
-    
-    elif len(count) == 3:
-        # 조건 4: 한 쌍만 있고 나머지 다 다름
-        pair = [k for k, v in count.items() if v == 2][0]
-        others = [k for k, v in count.items() if v == 1]
-        return others[0] * others[1]
-
+            p = arr[0]
+            q = arr[2]
+            return (p+q) * abs(p - q)
+            
+    elif unique == 3:
+        for num in arr:
+            if arr.count(num) == 1:
+                if 'q' not in locals():
+                    q = num
+                else:
+                    r = num
+        return q * r
     else:
-        # 조건 5: 전부 다름
-        return min(nums)
+        return arr[0]
+        
+            
+    
+    
+    
+    return answer
