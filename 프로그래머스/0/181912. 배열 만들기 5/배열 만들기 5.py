@@ -1,9 +1,9 @@
 def solution(intStrs, k, s, l):
     answer = []
-    
-    for item in intStrs:
-        substr = item[s:s+l]
-        num = int(substr)
-        if num > k:
-            answer.append(num)
+
+    for i in intStrs:
+        number = int(i[s:s+l])
+        if number > k:
+            answer.append(number)
+        
     return answer
