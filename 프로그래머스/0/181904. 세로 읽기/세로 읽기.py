@@ -1,7 +1,7 @@
 def solution(my_string, m, c):
     answer = ''
     
-    for i in range(0, len(my_string), m):
-        row = my_string[i:i+m]
-        answer += row[c-1]
+    for i in range(c-1, len(my_string), m):
+        answer += my_string[i]
+        
     return answer
