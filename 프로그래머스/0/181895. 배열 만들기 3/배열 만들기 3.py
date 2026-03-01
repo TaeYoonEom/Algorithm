@@ -3,5 +3,4 @@ def solution(arr, intervals):
     
     for a, b in intervals:
         answer += arr[a:b+1]
-    
     return answer
