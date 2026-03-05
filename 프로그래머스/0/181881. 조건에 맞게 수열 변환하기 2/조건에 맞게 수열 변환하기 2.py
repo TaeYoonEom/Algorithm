@@ -1,24 +1,18 @@
 def solution(arr):
-    x = 0
-
+    answer = 0
+    
     while True:
-        changed = False
-        new_arr = arr[:]
-
+        prev = arr[:]
+        
         for i in range(len(arr)):
             if arr[i] >= 50 and arr[i] % 2 == 0:
-                new_arr[i] = arr[i] // 2
-                if new_arr[i] != arr[i]:
-                    changed = True
+                arr[i] //= 2
             elif arr[i] < 50 and arr[i] % 2 == 1:
-                new_arr[i] = arr[i] * 2 + 1
-                if new_arr[i] != arr[i]:
-                    changed = True
-
-        if not changed:
+                arr[i] = arr[i] * 2 + 1
+        
+        if prev == arr:
             break
-
-        arr = new_arr
-        x += 1
-
-    return x
+            
+        answer += 1
+    
+    return answer
