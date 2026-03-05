@@ -1,11 +1,10 @@
 def solution(num_list):
-    answer = 1
-    
+    answer = 0
+    num1 = 1
     if len(num_list) >= 11:
+        answer = sum(num_list)
+    elif len(num_list) <= 10:
         for i in num_list:
-            answer += i
-        answer = answer -1
-    else:
-        for j in num_list:
-            answer *= j        
+            num1 *= i
+        answer = num1
     return answer
