@@ -1,8 +1,8 @@
 def solution(arr):
-    n = len(arr)
+    answer = 0
     
-    for i in range(n):
-        for j in range(n):
+    for i in range(len(arr)):
+        for j in range(len(arr)):
             if arr[i][j] != arr[j][i]:
-                return 0  # 대칭 아님
-    return 1  # 모두 대칭
+                return 0
+        return 1
