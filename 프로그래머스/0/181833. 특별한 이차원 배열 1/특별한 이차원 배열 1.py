@@ -1,13 +1,12 @@
 def solution(n):
     answer = []
-
+    
     for i in range(n):
-        row = []
+        rows = []
         for j in range(n):
             if i == j:
-                row.append(1)
+                rows.append(1)
             else:
-                row.append(0)
-        answer.append(row)
-
+                rows.append(0)
+        answer.append(rows)
     return answer
