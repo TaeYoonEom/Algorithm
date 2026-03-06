@@ -1,9 +1,4 @@
 def solution(rny_string):
-    answer = ''
     
-    for ch in rny_string:
-        if ch == 'm':
-            answer += 'rn'
-        else:
-            answer += ch
-    return answer
+    rny_string = rny_string.replace('m', 'rn')
+    return rny_string
