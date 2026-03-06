@@ -2,6 +2,7 @@ def solution(binomial):
     answer = 0
     
     a, op, b = binomial.split()
+    
     a = int(a)
     b = int(b)
     
@@ -10,5 +11,5 @@ def solution(binomial):
     elif op == '-':
         answer = a - b
     elif op == '*':
-         answer = a * b
+        answer = a * b
     return answer
