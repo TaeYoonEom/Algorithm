@@ -1,15 +1,12 @@
 def solution(arr, k):
-    result = []
-    count = {}
-
-    for num in arr:
-        if num not in count:
-            count[num] = True
-            result.append(num)
-        if len(result) == k:
-            break
-
-    while len(result) < k:
-        result.append(-1)
-
-    return result
+    answer = []
+    
+    for i in range(len(arr)):
+        if arr[i] not in answer:
+            answer.append(arr[i])
+    
+    if len(answer) < k:
+        answer += [-1] * (k-len(answer))
+    elif len(arr) >= k:
+        answer = answer[0:k]
+    return answer
