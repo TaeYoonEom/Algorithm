@@ -1,12 +1,7 @@
 def solution(arr):
-    answer = arr[:]
-    length = len(arr)
     
-    number = 1
-    while number < length:
-        number*=2
-        
-    while len(answer) < number:
-        answer.append(0)
-            
-    return answer
+    for i in range(1000):
+        if len(arr) <= 2**i:
+            arr += [0] * (2**i - len(arr))
+            break
+    return arr
