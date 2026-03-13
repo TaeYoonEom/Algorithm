@@ -1,4 +1,5 @@
 def solution(slice, n):
-    answer = 0
-
-    return ((n + slice - 1) // slice) 
+    
+    for i in range(1, 100):
+        if slice * i >= n:
+            return i
