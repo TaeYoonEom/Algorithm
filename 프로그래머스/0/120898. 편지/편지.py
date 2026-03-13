@@ -1,4 +1,7 @@
 def solution(message):
-    number = 0
-    number = len(message)
-    return number * 2
+    answer = 0
+    
+    lens = len(message)
+    
+    answer = 2 * lens
+    return answer
