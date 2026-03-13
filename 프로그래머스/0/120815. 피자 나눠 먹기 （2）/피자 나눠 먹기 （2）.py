@@ -1,5 +1,5 @@
-import math
-
 def solution(n):
-    lcm = (6 * n) // math.gcd(6, n)
-    return lcm // 6
+    answer = 1
+    while (6 * answer) % n != 0:
+        answer += 1
+    return answer
