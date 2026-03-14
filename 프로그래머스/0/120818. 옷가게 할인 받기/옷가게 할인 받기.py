@@ -1,12 +1,10 @@
 def solution(price):
+    
     if price >= 500000:
-        discount = 0.20
+        price = price * 0.8
     elif price >= 300000:
-        discount = 0.10
+        price = price * 0.9
     elif price >= 100000:
-        discount = 0.05
-    else:
-        discount = 0.0
-
-    discounted_price = int(price * (1 - discount))
-    return discounted_price
+        price = price * 0.95
+        
+    return int(price)
