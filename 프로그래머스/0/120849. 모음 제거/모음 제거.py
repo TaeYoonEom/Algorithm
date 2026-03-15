@@ -1,7 +1,9 @@
 def solution(my_string):
-    vowels = 'aeiou'
-    result = ''
-    for char in my_string:
-        if char not in vowels:
-            result += char
-    return result
+    answer = ''
+    vowel = ['a', 'e', 'i', 'o', 'u']
+    
+    for i in my_string:
+        if i not in vowel:
+            answer += i
+        
+    return answer
