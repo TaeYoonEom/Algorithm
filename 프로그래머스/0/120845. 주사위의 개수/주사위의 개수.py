@@ -3,4 +3,5 @@ def solution(box, n):
     
     for i in box:
         answer *= i // n
+    
     return answer
