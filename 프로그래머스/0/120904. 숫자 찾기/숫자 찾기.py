@@ -1,11 +1,9 @@
 def solution(num, k):
     answer = 0
     
-    new_num = list(str(num))
-    for i in range(len(new_num)):
-        if new_num[i] == str(k):
-            answer = i+1
-            break
-    if answer == 0:
-        answer = -1
-    return answer
+    num = list(str(num))
+    
+    for i in range(len(num)):
+        if num[i] == str(k):
+            return i+1
+    return -1
