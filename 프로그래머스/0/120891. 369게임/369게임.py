@@ -1,13 +1,8 @@
 def solution(order):
     answer = 0
-    clap = ['3', '6', '9']
     
-    for a in str(order):
-        if a in clap:
+    order = list(str(order))
+    for i in range(len(order)):
+        if order[i] == '3' or order[i] == '6' or order[i] == '9':
             answer += 1
-            
     return answer
-    
-    
-    
-    
