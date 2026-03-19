@@ -1,10 +1,10 @@
 # [level 0] k의 개수 - 120887 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120887) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120887#qna) 
 
 ### 성능 요약
 
-메모리: 9.24 MB, 시간: 26.03 ms
+메모리: 9.21 MB, 시간: 39.97 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 09월 05일 19:08:30
+2026년 03월 20일 00:39:38
 
 ### 문제 설명
 
