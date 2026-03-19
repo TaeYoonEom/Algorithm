@@ -1,12 +1,11 @@
 def solution(n):
     answer = []
-    x = 2
     
-    while x <= n:
-        if n % x == 0:
-            if x not in answer:
-                answer.append(x)
-            n //= x 
+    d = 2
+    while d <= n:
+        if n % d == 0:
+            answer.append(d)
+            n //= d
         else:
-            x += 1
-    return answer
+            d += 1 
+    return sorted(list(set(answer)))
