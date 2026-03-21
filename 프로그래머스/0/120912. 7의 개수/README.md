@@ -1,10 +1,10 @@
 # [level 0] 7의 개수 - 120912 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120912) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120912#qna) 
 
 ### 성능 요약
 
-메모리: 9.11 MB, 시간: 0.01 ms
+메모리: 9.18 MB, 시간: 0.01 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2025년 09월 05일 19:20:21
+2026년 03월 22일 00:26:22
 
 ### 문제 설명
 
