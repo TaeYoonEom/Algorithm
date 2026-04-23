@@ -3,7 +3,10 @@ def solution(arr, flag):
     
     for i in range(len(arr)):
         if flag[i] == True:
-            answer += [arr[i]] * (arr[i]*2)
+            for _ in range(arr[i]*2):
+                answer.append(arr[i])
         else:
-            answer = answer[: -arr[i]]
+            for _ in range(arr[i]):
+                if answer:
+                    answer.pop()
     return answer
