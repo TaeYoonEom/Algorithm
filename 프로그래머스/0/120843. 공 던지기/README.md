@@ -1,10 +1,10 @@
 # [level 0] 공 던지기 - 120843 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120843#qna) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/120843) 
 
 ### 성능 요약
 
-메모리: 9.18 MB, 시간: 0.00 ms
+메모리: 92.3 MB, 시간: 0.03 ms
 
 ### 구분
 
@@ -16,7 +16,7 @@
 
 ### 제출 일자
 
-2026년 03월 17일 20:07:54
+2026년 10월 22일 13:45:10
 
 ### 문제 설명
 
