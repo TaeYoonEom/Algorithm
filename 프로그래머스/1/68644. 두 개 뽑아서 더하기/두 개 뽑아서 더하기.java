@@ -1,16 +1,23 @@
-import java.util.Arrays;
-import java.util.TreeSet;
-
+import java.util.*;
 class Solution {
     public int[] solution(int[] numbers) {
-        TreeSet<Integer> answer = new TreeSet<>();
+        Set<Integer> arrays = new HashSet<>();
         
-        for(int i=0; i<numbers.length; i++){ // 1 1 2 3 4
-            for(int j=i+1; j<numbers.length; j++)
-            answer.add(numbers[i] + numbers[j]);
+        for(int i=0; i<numbers.length - 1; i++){
+            for(int j=i+1; j<numbers.length; j++){
+                arrays.add(numbers[i] + numbers[j]);
+            }
         }
-        return answer.stream()
-            .mapToInt(Integer::intValue)
-            .toArray();
+        int[] answer = new int[arrays.size()];
+        int index = 0;
+        
+        for(int sum : arrays){
+            answer[index] = sum;
+            index++;
+        }
+        
+        Arrays.sort(answer);
+        
+        return answer;
     }
 }
