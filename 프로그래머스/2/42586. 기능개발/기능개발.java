@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-
 class Solution {
     public int[] solution(int[] progresses, int[] speeds) {
         ArrayList<Integer> batches = new ArrayList<>();
@@ -8,8 +7,7 @@ class Solution {
         
         for(int i=0; i<progresses.length; i++){
             int remaining = 100 - progresses[i];
-            int days = remaining / speeds[i];
-            
+            int days = remaining / speeds[i]; 
             if(remaining % speeds[i] != 0){
                 days++;
             }
@@ -18,7 +16,7 @@ class Solution {
                 releaseDay = days;
                 count = 1;
             }else if(days <= releaseDay){
-                count ++;
+                count++;
             }else{
                 batches.add(count);
                 releaseDay = days;
@@ -31,7 +29,7 @@ class Solution {
         for(int i=0; i<batches.size(); i++){
             answer[i] = batches.get(i);
         }
+        
         return answer;
     }
-
 }
