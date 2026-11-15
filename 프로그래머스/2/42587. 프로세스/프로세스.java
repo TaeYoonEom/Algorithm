@@ -2,7 +2,7 @@ import java.util.Queue;
 import java.util.ArrayDeque;
 
 class Solution {
-    public int solution(int[] priorities, int location)     {
+    public int solution(int[] priorities, int location) {
         Queue<int[]> queue = new ArrayDeque<>();
         int count = 0;
         
@@ -12,7 +12,7 @@ class Solution {
         
         while(!queue.isEmpty()){
             boolean hasHigherPriority = false;
-            int [] first = queue.poll();
+            int[] first = queue.poll(); //A(2)
             
             for(int[] waiting : queue){
                 if(first[1] < waiting[1]){
@@ -20,9 +20,9 @@ class Solution {
                     break;
                 }
             }
-            if(hasHigherPriority){
-                    queue.offer(first);
-                    continue;
+            if(hasHigherPriority){ // 가장 큰 수는 실행x 
+                queue.offer(first);
+                continue;
             }
             count++;
             if(first[0] == location){
